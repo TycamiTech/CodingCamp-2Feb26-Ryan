@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List - Ryan</title>
+    <!--css external-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-card">
+            <h1 class="title">Todo List</h1>
+            
+            <div class="input-group">
+                <label for="dateInput">Today's Date</label>
+                <input type="date" id="dateInput" class="input-field">
+            </div>
+            
+            <div class="input-group">
+                <label for="todoInput">Add Todo</label>
+                <div class="input-wrapper">
+                    <input 
+                        type="text" 
+                        id="todoInput" 
+                        class="input-field" 
+                        placeholder="Enter your todo..."
+                        autocomplete="off"
+                    >
+                    <button id="addBtn" class="btn-add">Add Todo</button>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="pending">Pending</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+
+            <div class="todo-list" id="todoList">
+                <p class="empty-message">No todos yet. Add one to get started!</p>
+            </div>
+        </div>
+    </div>
+<!--java script external-->
+    <script src="js/script.js"></script>
+</body>
+</html>
